@@ -1,0 +1,30 @@
+.section{
+  height: 825px;
+  background: url("../../Img/stepByStepSection.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title{
+  padding-top: 100px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.steps{
+  position: relative;
+  width: 90%;
+  margin: 220px auto 0 auto;
+  svg{
+    position: absolute;
+  }
+  &_list{
+    list-style: none;
+    margin: 0 auto;
+    width: 1187px;
+    display: flex;
+    column-gap: 42px;
+  }
+}

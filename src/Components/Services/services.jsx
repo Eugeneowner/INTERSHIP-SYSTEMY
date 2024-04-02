@@ -1,7 +1,7 @@
 import s from "./services.module.scss"
 import ServiceItem from "./seviceItem"
 
-const Servises = () => {
+const Services = () => {
   const servicesList = [
     {
       id:1,
@@ -36,4 +36,4 @@ const Servises = () => {
   )
 } 
 
-export default Servises
+export default Services

@@ -1,13 +1,17 @@
 import './App.css'
 import Banner from './Components/Banner/banner'
-import Servises from './Components/Servises/services'
+import Services from './Components/Services/services'
+import StepByStep from './Components/StepByStep/StepByStep'
 
 function App() {
 
   return (
     <main>
       <Banner/>
-      <Servises/>
+      <Services/>
+      <StepByStep/>
+    
+
     </main>
   )
 }
