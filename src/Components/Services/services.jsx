@@ -26,8 +26,8 @@ const Services = () => {
   ]
   return(
     <section className={s.services}>
-      <h2 className={s.services_title}>Place a shipment – Select the weight of the parcel</h2>
-      <h3 className={s.services_description}>Couriers are distinguished from ordinary mail services by features such as speed, security, tracking</h3>
+      <h2 className={s.services_title}>Оформити відправку – обери вагу посилки.</h2>
+      <h3 className={s.services_description}>Кур'єри відрізняються від звичайних поштових служб такими характеристиками, як швидкість, безпека, відстеження.</h3>
       <ul className={s.services_list}>
         {servicesList.map(service => <ServiceItem key={service.id} price={service.price} weight={service.weight}/>)}
 

@@ -7,39 +7,39 @@ const StepByStep = () => {
   const stepsList = [
     {
       id:1,
-      title: "title 1",
-      text: "Some text1",
+      title: "1 крок",
+      text: "Відправляєте посилку на поштовий склад у Польщі.",
       theme: "orange",
     },
     {
       id:2,
-      title: "title 2",
-      text: "Some text2",
-      theme: "yellow",
+      title: "2 крок",
+      text: "На сайті вказуєте дані відправника і отримувача.",
+      theme: "yellow"
     },
     {
       id:3,
-      title: "title 3",
-      text: "Some text3",
+      title: "3 крок",
+      text: "Вказуєте вміст і оціночну вартість посилки.",
       theme: "orange",
     },
     {
       id:4,
-      title: "title 4",
-      text: "Some text4",
+      title: "4 крок",
+      text: "Оплачуєте згідно обраного тарифу.",
       theme: "yellow",
     },
     {
       id:5,
-      title: "title 5",
-      text: "Some text5",
+      title: "5 крок",
+      text: "Ми веземо вашу посилку до вказаного відділення Укрпошти отримувача",
       theme:"orange",
     }
       
   ]
   return (
   <section className={s.section}>
-    <h2 className={s.title}>Как это работает</h2>
+    <h2 className={s.title}>Як працює доставка</h2>
     <div className={s.steps}>
     <StepsBgIcon/>
       <ul className={s.steps_list}>

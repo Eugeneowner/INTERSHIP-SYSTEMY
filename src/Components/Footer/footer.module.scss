@@ -1,0 +1,105 @@
+.footer {
+  width: 100%;
+  background: #100808;
+    &_title {
+  padding-top: 45px;
+  // font-family: "Montserrat", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  }
+  &_container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  &_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    &_list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      &_item{
+        &_link{
+          text-decoration: none;
+          &_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:30px;
+            height: 30px;
+            background-color: #FFF;
+            border-radius:50%;
+          }
+          display: flex;
+          align-items: center;
+          column-gap: 16px;
+          
+          &_text {
+            // font-family:"Montserrat", sans-serif;
+            font-family: "IBM Plex Mono", monospace;
+            font-size:14px;
+            font-weight:600;
+            color:#fff;
+            
+          }
+        }
+      }
+    }
+    &_text {
+    border-top: 2px solid #212529;
+    padding-top: 10px;
+    line-height: 18px;
+    width: 700px;
+    font-size: 12px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    color:#FFF;
+    }
+  }
+  &_right {
+    &_img{
+      width: 600px;
+    }
+  }
+  }
+
+}
+@media screen and (max-width:475px) {
+  .footer{
+    &_title{
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+    }
+    &_container{
+      &_left{
+        &_list{
+          &_item{
+            &_link{
+              column-gap: 8px;
+            }
+          }
+        }
+        &_text {
+          padding-top: 20px;
+          width: 400px;
+        }
+      }
+      &_right{
+        display: none;
+      }
+    }
+  }
+  
+}
+@media screen and (min-width: 476px) and (max-width:768px){
+  .footer {
+    overflow: hidden;
+  }
+}

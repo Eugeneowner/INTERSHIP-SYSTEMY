@@ -9,8 +9,8 @@ const StepItem = ({title,text, theme}) => {
         ? <TransportIcon/>
         : <TruckIcon/>
       }
-      <h2>{title}</h2>
-      <p>{text}</p>
+      <h2 className={s.item_title}>{title}</h2>
+      <p className={s.item_text}>{text}</p>
     </li>
   )
 }

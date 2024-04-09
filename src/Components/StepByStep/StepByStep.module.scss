@@ -17,8 +17,9 @@
   position: relative;
   width: 90%;
   margin: 220px auto 0 auto;
-  svg{
+  &>svg{
     position: absolute;
+    left: 17px;
   }
   &_list{
     list-style: none;
@@ -26,5 +27,41 @@
     width: 1187px;
     display: flex;
     column-gap: 42px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .section{
+    height: auto;
+  }
+  .steps{
+    margin-top: 110px;
+    &>svg{
+      display: none;
+    }
+    &_list{
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (min-width:476px) and (max-width: 768px){
+  .section {
+    height: auto;
+  }
+  .steps{
+    margin-top: 110px;
+    &>svg{
+      display: none;
+    }
+    &_list{
+      max-width: 476px;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
   }
 }
