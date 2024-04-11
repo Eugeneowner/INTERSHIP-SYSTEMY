@@ -87,9 +87,10 @@
             }
           }
         }
-        &_text {
-          padding-top: 20px;
-          width: 400px;
+        &_text {    
+          padding-top: 30px;
+          border: none;
+          width: 375px;
         }
       }
       &_right{
@@ -102,5 +103,22 @@
 @media screen and (min-width: 476px) and (max-width:768px){
   .footer {
     overflow: hidden;
+    &_title{
+    padding-top: 10 12px;
+    font-size: 32px;
+    }
+    &_container{
+      &_left{
+        &_text{
+          border: none;
+          padding: 30px 12px;
+          padding-left: 0;
+          width: calc(100% - 24px);
+        }
+      }
+      &_right{
+        display: none;
+      }
+    }
   }
 }

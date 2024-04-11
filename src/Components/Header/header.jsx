@@ -3,6 +3,7 @@ import logo from "../../Img/logo.png"
 import { EmailIcon, TelegramIcon, PhoneIcon, FacebookIcon } from "../Assets/Icons"
 import mailIcon from "../../Img/icons/mailWhite.svg"
 import facebookIcon from "../../Img/icons/facebookWhite.svg"
+import { PolandIcon, RussiaIcon, UkraineIcon } from "../Assets/countries"
 
 const Header = () => {
   const nav = ["Про нас", "Як це працює", "Бізнес-клієнтам","ПРИВАТНИМ-КЛІЄНТАМ", "Контакти"]
@@ -15,7 +16,7 @@ const Header = () => {
           </div>
           <div className={s.header_right}>
           <button className={s.header_right_button}>
-             Відстежити трекінг
+             Відстежити <span className={s.header_right_button_tracking}>трекінг</span>
           </button>
           <ul className={s.header_right_social}>
             {/* <li className={s.header_right_social_item}>
@@ -48,6 +49,17 @@ const Header = () => {
               }
             </nav>
           <ul className={s.header_bottom_btns}>
+          <li className={s.header_bottom_btns_languages}>
+             <button className={s.header_bottom_btns_languages_item}>
+              <UkraineIcon/>
+             </button>
+             <button className={s.header_bottom_btns_languages_item}>
+              <PolandIcon/>
+             </button>
+             <button className={s.header_bottom_btns_languages_item}>
+              <RussiaIcon/>
+             </button>
+          </li>
             <li className={s.header_bottom_btns_item}>
               <img className={s.header_bottom_btns_item_img} src={facebookIcon} alt="" />
             </li>
