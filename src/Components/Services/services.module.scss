@@ -105,5 +105,20 @@
     }
   }
 }
-
-
+@media screen and (min-width:769px) and (max-width:1399px) {
+  .services {
+    height: auto;
+    padding-bottom: 35px;
+    &_list {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+    &_item{
+      width: 35%;
+    }
+   }
+  }
+}
+    

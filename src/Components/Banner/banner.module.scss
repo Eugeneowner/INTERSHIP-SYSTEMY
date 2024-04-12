@@ -99,3 +99,17 @@
    
   }
 }
+@media screen and (min-width:769px) and (max-width:1440px) {
+  .banner {
+    &_description {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      &_mission {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}

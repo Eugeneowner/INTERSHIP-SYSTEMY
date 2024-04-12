@@ -65,3 +65,16 @@
   }
   
 }
+@media screen and (min-width:769px) and (max-width:1399px) {
+  .item{
+    svg{
+      display: block;
+    }
+    &_orange {
+      margin-top: 0;
+    }
+    &_yellow {
+      margin-top: 60px;
+    }
+  }
+}

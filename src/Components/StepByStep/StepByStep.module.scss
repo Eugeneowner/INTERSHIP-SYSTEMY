@@ -65,10 +65,23 @@
     }
   }
 }
-@media screen and (min-width:1200px) and (max-width:1440px) {
+@media screen and (min-width:769px) and (max-width:1399px) {
+  .section{
+    height: auto;
+    padding-bottom: 50px;
+  }
   .steps {
+    margin-top: 140px;
     svg{
       display: none;
+
+    }
+    &_list{
+        width: 70%;
+        max-width: 650px;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
   }
 }

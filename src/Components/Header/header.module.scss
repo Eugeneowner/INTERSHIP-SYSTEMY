@@ -235,6 +235,12 @@
     }
     &_bottom{
       width: calc(100% - 24px);
+      &_nav{
+        column-gap: 10px;
+        &_item{ 
+          font-size: 10px;
+        }
+      }
       &_btns{
         &_languages{
           column-gap:20px;
