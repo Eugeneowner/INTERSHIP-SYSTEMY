@@ -1,0 +1,13 @@
+.item {
+  margin-top: 14px;
+  padding: 20px 30px 20px 60px;
+  border: 1px solid #ffea32;
+  border-radius: 10px;
+  backdrop-filter: blur(20.100000381469727px);
+  background: rgba(133, 133, 133, 0.52);
+  color:#FFF;
+  font-size: 18px;
+  &_bold {
+    font-weight: 700;
+  }
+}

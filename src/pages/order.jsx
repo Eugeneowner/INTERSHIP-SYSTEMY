@@ -1,10 +1,11 @@
 import Header from "../Components/Header/header"
+import Order from "../Components/Order/order"
 
 const OrderPage = () => { 
   return ( 
     <>
       <Header/>
-      <h1>Order</h1>
+      <Order/>
     </>
   )
 }
