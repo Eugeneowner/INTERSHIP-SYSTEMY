@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Banner from './Components/Banner/banner'
-import Footer from './Components/Footer/footer'
 import Loader from './Components/Loader/loader'
-import Services from './Components/Services/services'
-import StepByStep from './Components/StepByStep/StepByStep'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import MainPage from './pages/main'
+import OrderPage from './pages/order'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -14,13 +14,15 @@ function App() {
     }
   }, [isLoading])
   return (
-    <main>
-     { isLoading && <Loader/>}
-      <Banner/>
-      <Services/>
-      <StepByStep/>
-      <Footer/>
-    </main>
+    <BrowserRouter>
+      <main>
+      { isLoading && <Loader/>}
+        <Routes>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/order" element={<OrderPage/>}/>
+        </Routes>
+      </main>
+    </BrowserRouter>
   )
 }
 
