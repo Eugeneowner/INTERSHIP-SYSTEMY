@@ -1,10 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
-import { BoxIcon } from "../Assets/Icons";
+import { BoxIcon, CloseIcon } from "../Assets/Icons";
 import InputForm from "../form/input/input";
 import s from "./order.module.scss";
 import Plan from "./plan/plan";
 import { nextPage, prevPage } from "../../redux/slices/order";
 import { useNavigate } from "react-router-dom";
+import { t } from "i18next";
 const Order = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -26,10 +27,17 @@ const Order = () => {
   const handlePrevPage = () => {
     dispatch(prevPage());
   };
-  console.log(formList)
+
+  const handleCloseButton = () => { 
+    navigate("/")
+  }
+
   return (
     <section className={s.section}>
       <div className={s.order}>
+        <button onClick={handleCloseButton} className={s.order_btnClose}>
+          <CloseIcon/>  
+        </button> 
         <div className={s.order_title}>
           <BoxIcon />
           <h1 className={s.order_title_text}>{currentTitle}</h1>
@@ -56,7 +64,7 @@ const Order = () => {
                 currentPage === 1 && s.order_bottom_btn_disabled
               }`}
             >
-              Преведущая
+              {t(`order.btns.back`)}
             </button>
             <button onClick={handleNextPage} className={s.order_bottom_btn}>
               {currentPage !== 3 ? "Следующая" : "Создать заказ"}

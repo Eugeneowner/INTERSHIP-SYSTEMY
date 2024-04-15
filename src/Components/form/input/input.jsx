@@ -1,10 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import s from "./input.module.scss";
 import { changeFormInput } from "../../../redux/slices/order";
+import { t } from "i18next";
 const InputForm = ({ label, placeholder, name, isError, size, checkbox }) => {
-  console.log(`${name} - ${size}`);
+
   const value = useSelector((state) => state.order.info[name]);
   const dispatch = useDispatch();
+
   const handleChange = (value) => {
     dispatch(
       changeFormInput({
@@ -18,7 +20,7 @@ const InputForm = ({ label, placeholder, name, isError, size, checkbox }) => {
   };
   return (
     <label className={`${s.item} ${size === "big" && s.item_big}`}>
-      <p className={s.item_text}>{label}</p>
+      <p className={s.item_text}>{t(`order.${name}`)}</p>
       {checkbox && (
         <label className={s.item_check}>
           <input
@@ -37,7 +39,7 @@ const InputForm = ({ label, placeholder, name, isError, size, checkbox }) => {
         value={value}
       />
       {isError && (
-        <p className={s.errorText}>Данное поле должно быть заполнено</p>
+        <p className={s.errorText}>{t(`order.error`)}</p>
       )}
     </label>
   );

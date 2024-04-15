@@ -72,17 +72,17 @@ const initialState = {
       },
       {
         label: "Город",
-        placeholder: "Введите город отправителя",
+        placeholder: "Введите город получателя",
         name: "cityR",
       },
       {
         label: "Индекс",
-        placeholder: "Введите индекс отправителяs",
+        placeholder: "Введите индекс получателя",
         name: "indexRecipient",
       },
       {
-        label: "Адрес отправителя",
-        placeholder: "Введите адрес отправителя",
+        label: "Адрес получателя",
+        placeholder: "Введите адрес получателя",
         name: "addressRecipient",
         size: "big",
       },

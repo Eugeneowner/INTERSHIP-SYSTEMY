@@ -120,6 +120,24 @@
           }
         }
       }
+      &_back{ 
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        &_text{ 
+          font-family: "Urbanist", sans-serif;
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 12px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+        svg{ 
+          width: 15px;
+          height: 20px;
+        }
+      }
     }
     &_btns{
       display: flex;
@@ -199,6 +217,7 @@
         &_item{
           font-size: 10px;
         }
+        
       }
       &_btns{
         &_item{

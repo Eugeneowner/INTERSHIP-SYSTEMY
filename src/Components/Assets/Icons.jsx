@@ -138,8 +138,6 @@ export const TelegramFooter = () => {
 		c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"
         />
       </g>
-      
-     
     </svg>
   );
 };
@@ -149,7 +147,6 @@ export const MailFooter = () => {
       version="1.1"
       id="Слой_1"
       xmlns="http://www.w3.org/2000/svg"
-  
       x="0px"
       y="0px"
       viewBox="0 0 16 16"
@@ -230,6 +227,84 @@ export const FacebookFooter = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+    </svg>
+  );
+};
+
+export const UndoIcon = () => {
+  return (
+    <svg
+      width="800px"
+      height="800px"
+      viewBox="-0.5 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M10 21.4199H15C16.8565 21.4199 18.637 20.6824 19.9497 19.3696C21.2625 18.0569 22 16.2764 22 14.4199C22 12.5634 21.2625 10.783 19.9497 9.47021C18.637 8.15746 16.8565 7.41992 15 7.41992H2"
+          stroke="#ffffff"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M6 11.4199L2 7.41992L6 3.41992"
+          stroke="#ffffff"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+      </g>
+    </svg>
+  );
+};
+
+export const CloseIcon = () => {
+  return (
+    <svg
+      width="800px"
+      height="800px"
+      viewBox="-0.5 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M3 21.32L21 3.32001"
+          stroke="#ffffff"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M3 3.32001L21 21.32"
+          stroke="#ffffff"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+      </g>
     </svg>
   );
 };

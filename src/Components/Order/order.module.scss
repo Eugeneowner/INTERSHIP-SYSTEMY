@@ -9,12 +9,40 @@ $yellow: #ffea32;
 }
 
 .order {
+  position: relative;
   margin-left: 80px;
   width: 862px;
   height: 659px;
   backdrop-filter: blur(20.100000381469727px);
   background: rgba(37, 37, 37, 0.52);
   border-radius: 22px;
+  &_btnClose{ 
+    position: absolute;
+    top: 25px;
+    left: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    background: none;
+    &:hover{ 
+      transition-duration: 0.3s;
+      border-color: #cbb812;
+      svg{
+        path{
+          transition-duration: 0.3s;
+          stroke:#cbb812;
+        }
+      }
+    }
+    svg{
+      width: 30px;
+      height: 30px;
+    }
+  }
   &_title {
     padding-top: 26px;
     display: flex;
