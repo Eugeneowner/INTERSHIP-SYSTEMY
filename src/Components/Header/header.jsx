@@ -13,6 +13,7 @@ import { PolandIcon, RussiaIcon, UkraineIcon } from "../Assets/countries";
 import { Link, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { changeLanguages } from "../../redux/slices/languages";
+import { t } from "i18next";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -22,11 +23,11 @@ const Header = () => {
     dispatch(changeLanguages(language));
   };
   const nav = [
-    "Про нас",
-    "Як це працює",
-    "Бізнес-клієнтам",
-    "ПРИВАТНИМ-КЛІЄНТАМ",
-    "Контакти",
+    "aboutUs",
+    "howItWorks",
+    "bissnesClient",
+    "privateClient",
+    "contacts",
   ];
   return (
     <header className={s.header}>
@@ -36,8 +37,10 @@ const Header = () => {
         </div>
         <div className={s.header_right}>
           <button className={s.header_right_button}>
-            Відстежити{" "}
-            <span className={s.header_right_button_tracking}>трекінг</span>
+            {t("nav.location.part1")}{" "}
+            <span className={s.header_right_button_tracking}>
+              {t("nav.location.part2")}
+            </span>
           </button>
           <ul className={s.header_right_social}>
             {/* <li className={s.header_right_social_item}>
@@ -68,12 +71,12 @@ const Header = () => {
           {pathname === "/" ? (
             nav.map((item) => (
               <Link key={item} className={s.header_bottom_nav_item}>
-                {item}
+                {t(`nav.${item}`)}
               </Link>
             ))
           ) : (
             <Link to="/" className={s.header_bottom_nav_back}>
-              <p className={s.header_bottom_nav_back_text}>Назад</p>
+              <p className={s.header_bottom_nav_back_text}>{t(`nav.back`)}</p>
               <UndoIcon />
             </Link>
           )}

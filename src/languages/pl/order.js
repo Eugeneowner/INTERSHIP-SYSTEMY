@@ -1,5 +1,8 @@
 export default {
     title: "GOTOWE! Proszę sprawdzić dane",
+    pageInfoSender: "Wypełnij dane nadawcy",
+    pageInfoRecipient: "Wypełnij dane odbiorcy",
+    pageInfoDescription: "Uzupełnij dane o zawartości przesyłki",
     tableDescription: {
       sender: "Dane nadawcy",
       recipient: "Dane odbiorcy",
@@ -26,6 +29,8 @@ export default {
     error: "To pole musi zostać wypełnione",
     btns: { 
       back: "Wstecz",
+      next: "Następny",
+      create: "Utwórz zamówienie",
       pay: "Zapłać"
     }
   };

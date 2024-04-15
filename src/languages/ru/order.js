@@ -1,5 +1,8 @@
 export default {
   title: "ГОТОВО! Пожалуйста, проверьте данные",
+  pageInfoSender: "Заполните данные отправителя",
+  pageInfoRecipient: "Заполните данные получателя",
+  pageInfoDescription: "Заполните данные о содержимом посылки",
   tableDescription: {
     sender: "Данные отправителя",
     recipient: "Данные получателя",
@@ -26,6 +29,8 @@ export default {
   error: "Данное поле должно быть заполнено",
   btns: { 
     back: "Назад",
+    next: "Следующая",
+    create: "Создать заказ",
     pay: "Оплатить"
   }
 };

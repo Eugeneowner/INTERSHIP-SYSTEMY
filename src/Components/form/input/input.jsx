@@ -29,7 +29,7 @@ const InputForm = ({ label, placeholder, name, isError, size, checkbox }) => {
             
             onChange={(e) => handleChangeCheckBox(e.target.checked)}
           />
-          <p className={s.item_check_text}>{checkbox.text}</p>
+          <p className={s.item_check_text}>{t("order.isRich150")}</p>
         </label>
       )}
       <input
