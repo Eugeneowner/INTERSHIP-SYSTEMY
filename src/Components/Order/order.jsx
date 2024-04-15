@@ -26,7 +26,7 @@ const Order = () => {
   const handlePrevPage = () => {
     dispatch(prevPage());
   };
-
+  console.log(formList)
   return (
     <section className={s.section}>
       <div className={s.order}>
@@ -34,7 +34,6 @@ const Order = () => {
           <BoxIcon />
           <h1 className={s.order_title_text}>{currentTitle}</h1>
         </div>
-
         <form className={s.order_form}>
           {formList.map((item, index) => (
             <InputForm
@@ -60,7 +59,7 @@ const Order = () => {
               Преведущая
             </button>
             <button onClick={handleNextPage} className={s.order_bottom_btn}>
-              {currentPage !== 3 ? "Следущая" : "Создать заказ"}
+              {currentPage !== 3 ? "Следующая" : "Создать заказ"}
             </button>
           </div>
         </div>

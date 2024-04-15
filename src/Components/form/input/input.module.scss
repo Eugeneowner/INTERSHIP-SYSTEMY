@@ -1,6 +1,7 @@
 .item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   row-gap: 6px;
   width: 35%;
   &_big {

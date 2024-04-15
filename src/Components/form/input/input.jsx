@@ -24,7 +24,7 @@ const InputForm = ({ label, placeholder, name, isError, size, checkbox }) => {
           <input
             className={s.item_check_input}
             type="checkbox"
-            checked={useSelector((state) => state.order.info[checkbox.name])}
+            
             onChange={(e) => handleChangeCheckBox(e.target.checked)}
           />
           <p className={s.item_check_text}>{checkbox.text}</p>
