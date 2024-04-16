@@ -12,7 +12,6 @@ import { changeLanguage } from 'i18next'
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   const currentLanguage = useSelector(state=>state.languages.current)
-  console.log(currentLanguage)
   changeLanguage(currentLanguage)
   useEffect(() => {
     if (isLoading) {

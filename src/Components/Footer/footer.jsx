@@ -8,10 +8,13 @@ import phoneIcon from "../../Img/icons/phone-call.svg"
 import telegram from "../../Img/icons/telegram.svg"
 import whatsApp from "../../Img/icons/whatsapp.svg"
 import faceBook from "../../Img/icons/facebook.svg"
+
+import {t} from "i18next"
+
 const Footer = () => {
   return (
     <footer className={s.footer}>
-      <h2 className={s.footer_title}>Доставка протягом 7 робочих днів</h2>
+      <h2 className={s.footer_title}>{t("footer.title")}</h2>
       <div className={s.footer_container}>
         <div className={s.footer_container_left}>
           <ul className={s.footer_container_left_list}>
@@ -31,7 +34,7 @@ const Footer = () => {
                 <div className={s.footer_container_left_list_item_link_box}>
                 <img width="20" height="20" src={phoneIcon} alt="" />
                 </div>
-                <p className={s.footer_container_left_list_item_link_text}>tel:+30670000000</p>
+                <p className={s.footer_container_left_list_item_link_text}>+30670000000</p>
               </a>
             </li>
             <li className={s.footer_container_left_list_item}>
@@ -61,10 +64,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <h3 className={s.footer_container_left_text}>intership systemy.pl — сервіс доставки посилок в Україну до відділення Укрпошти.
-          За будь-яких питань звертайтесь до нас за телефоном  0800 000 000 (Безкоштовні вхідні) чи на електронну адресу office@intershipsystemy.pl.
-          Завжди раді Вас бачити на нашому сервісі доставки.<br/>
-          ©Всі права захищені. Використання матеріалів даного сайту можливе тільки з посиланням на джерело.</h3>
+          <h3 className={s.footer_container_left_text}>{t("footer.copyright")}</h3>
         </div>
         <div className={s.footer_container_right}>
           <img className={s.footer_container_right_img} src={footerImg} />

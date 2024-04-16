@@ -1,18 +1,17 @@
+import { TransportIcon, TruckIcon } from "../Assets/StepsIcons";
+import s from "./StepItem.module.scss";
 
-import { TransportIcon, TruckIcon } from "../Assets/StepsIcons"
-import s from "./StepItem.module.scss"
-const StepItem = ({title,text, theme}) => {
-  return ( 
-    <li className={`${s.item} ${theme === "yellow" ? s.item_yellow : s.item_orange}`}>
-      {
-        theme === "yellow"
-        ? <TransportIcon/>
-        : <TruckIcon/>
-      }
-      <h2 className={s.item_title}>{title}</h2>
-      <p className={s.item_text}>{text}</p>
+import { t } from "i18next";
+const StepItem = ({ id, name }) => {
+  return (
+    <li className={`${s.item} ${id % 2 === 0 ? s.item_yellow : s.item_orange}`}>
+      {id % 2 === 0 ? <TransportIcon /> : <TruckIcon />}
+      <h2 className={s.item_title}>
+        {id} {t(`stepByStep.stepName`)}
+      </h2>
+      <p className={s.item_text}>{t(`stepByStep.${name}`)}</p>
     </li>
-  )
-}
+  );
+};
 
-export default StepItem
+export default StepItem;
