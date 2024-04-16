@@ -13,6 +13,14 @@ import nav_ru from "./languages/ru/nav"
 import nav_ua from "./languages/ua/nav"
 import nav_pl from "./languages/pl/nav"
 
+import banner_ru from "./languages/ru/banner"
+import banner_ua from "./languages/ua/banner"
+import banner_pl from "./languages/pl/banner"
+
+import service_ru from "./languages/ru/service"
+import service_ua from "./languages/ua/service"
+import service_pl from "./languages/pl/service"
+
 i18n.use(initReactI18next).init({
   resources: {
     ru: {
@@ -25,6 +33,12 @@ i18n.use(initReactI18next).init({
         },
         nav: { 
           ...nav_ru
+        },
+        banner: { 
+          ...banner_ru
+        },
+        service: { 
+          ...service_ru
         }
       },
     },
@@ -38,6 +52,12 @@ i18n.use(initReactI18next).init({
         },
         nav: { 
           ...nav_ua
+        },
+        banner: { 
+          ...banner_ua
+        },
+        service: { 
+          ...service_ua
         }
       },
     },
@@ -51,6 +71,12 @@ i18n.use(initReactI18next).init({
         },
         nav: { 
           ...nav_pl
+        },
+        banner:{ 
+          ...banner_pl
+        },
+        service: { 
+          ...service_pl
         }
       },
     },
