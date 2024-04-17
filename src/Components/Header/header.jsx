@@ -11,7 +11,7 @@ import mailIcon from "../../Img/icons/mailWhite.svg";
 import facebookIcon from "../../Img/icons/facebookWhite.svg";
 import { PolandIcon, RussiaIcon, UkraineIcon } from "../Assets/countries";
 import { Link, useLocation } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { changeLanguages } from "../../redux/slices/languages";
 import { t } from "i18next";
 
@@ -22,13 +22,7 @@ const Header = () => {
   const handleChangeLanguage = (language) => {
     dispatch(changeLanguages(language));
   };
-  const nav = [
-    "aboutUs",
-    "howItWorks",
-    "bissnesClient",
-    "privateClient",
-    "contacts",
-  ];
+  const navList = useSelector((state) => state.nav.list);
   return (
     <header className={s.header}>
       <div className={s.header_wrapper}>
@@ -43,21 +37,11 @@ const Header = () => {
             </span>
           </button>
           <ul className={s.header_right_social}>
-            {/* <li className={s.header_right_social_item}>
-              <a>
-                <EmailIcon/>
-              </a>
-            </li> */}
             <li className={s.header_right_social_item}>
               <a className={s.header_right_social_item_link}>
                 <PhoneIcon />
               </a>
             </li>
-            {/* <li className={s.header_right_social_item}>
-              <a>
-                <FacebookIcon/>
-              </a>
-              </li> */}
             <li className={s.header_right_social_item}>
               <a className={s.header_right_social_item_link}>
                 <TelegramIcon />
@@ -69,9 +53,13 @@ const Header = () => {
       <div className={s.header_bottom}>
         <nav className={s.header_bottom_nav}>
           {pathname === "/" ? (
-            nav.map((item) => (
-              <Link key={item} className={s.header_bottom_nav_item}>
-                {t(`nav.${item}`)}
+            navList.map((item) => (
+              <Link
+                key={item}
+                to={item.url}
+                className={s.header_bottom_nav_item}
+              >
+                {t(`nav.${item.name}`)}
               </Link>
             ))
           ) : (

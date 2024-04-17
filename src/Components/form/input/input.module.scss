@@ -59,3 +59,14 @@
   color: #fff;
   border-radius: 10px;
 }
+
+
+@media screen and (max-width:768px) {
+  .item{
+    width: calc(90% - 15px);
+    margin: 0 auto;
+    &_input{ 
+      padding: 0 0 0 15px;
+    }
+  }
+}
