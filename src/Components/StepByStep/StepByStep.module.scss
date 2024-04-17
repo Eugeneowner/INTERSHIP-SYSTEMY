@@ -65,7 +65,7 @@
     }
   }
 }
-@media screen and (min-width:769px) and (max-width:1399px) {
+@media screen and (min-width:769px) and (max-width:1439px) {
   .section{
     height: auto;
     padding-bottom: 50px;
@@ -84,4 +84,10 @@
 
     }
   }
+}
+
+@media screen and (min-width:1440px) {
+    .steps{ 
+      max-width: 1300px;
+    }
 }

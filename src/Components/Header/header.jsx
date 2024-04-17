@@ -55,7 +55,7 @@ const Header = () => {
           {pathname === "/" ? (
             navList.map((item) => (
               <Link
-                key={item}
+                key={item.name}
                 to={item.url}
                 className={s.header_bottom_nav_item}
               >
@@ -91,18 +91,22 @@ const Header = () => {
             </button>
           </li>
           <li className={s.header_bottom_btns_item}>
-            <img
-              className={s.header_bottom_btns_item_img}
-              src={facebookIcon}
-              alt=""
-            />
+            <a href="">
+              <img
+                className={s.header_bottom_btns_item_img}
+                src={facebookIcon}
+                alt=""
+              />
+            </a>
           </li>
           <li className={s.header_bottom_btns_item}>
-            <img
-              className={s.header_bottom_btns_item_img}
-              src={mailIcon}
-              alt=""
-            />
+            <a href="mailto:office@intershipsystemy.pl">
+              <img
+                className={s.header_bottom_btns_item_img}
+                src={mailIcon}
+                alt=""
+              />
+            </a>
           </li>
         </ul>
       </div>

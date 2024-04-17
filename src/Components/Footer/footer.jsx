@@ -24,13 +24,13 @@ const Footer = () => {
                 <img width="20" height="20" src={mailIcon} alt="" />
                 </div>
                 
-                <p className={s.footer_container_left_list_item_link_text}>
+                <a href="mailto:office@intershipsystemy.pl" className={s.footer_container_left_list_item_link_text}>
                   office@intershipsystemy.pl
-                </p>
+                </a>
               </a>
             </li>
             <li className={s.footer_container_left_list_item}>
-              <a className={s.footer_container_left_list_item_link} href="phone:+30670000000">
+              <a className={s.footer_container_left_list_item_link} href="tel:+30670000000">
                 <div className={s.footer_container_left_list_item_link_box}>
                 <img width="20" height="20" src={phoneIcon} alt="" />
                 </div>
