@@ -3,7 +3,7 @@ $yellow: #ffea32;
   padding-top: 200px;
   width: 100%;
   height: auto;
-  background: url("../../Img/servicesBg.png");
+  background: url("https://intershipsystemy.pl/Img/servicesBg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 50px;
@@ -125,4 +125,11 @@ $yellow: #ffea32;
     width: 768px;
   }
   
+}
+@media screen and (max-width: 767px) {
+  .order{ 
+    &_title{ 
+      width: 300px;
+    }
+  }
 }

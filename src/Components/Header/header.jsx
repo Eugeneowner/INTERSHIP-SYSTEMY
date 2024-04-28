@@ -1,5 +1,4 @@
 import s from "./header.module.scss";
-import logo from "../../Img/logo.png";
 import {
   EmailIcon,
   TelegramIcon,
@@ -27,7 +26,7 @@ const Header = () => {
     <header className={s.header}>
       <div className={s.header_wrapper}>
         <div className={s.header_left}>
-          <img className={s.header_left_logo} src={logo} alt="logo" />
+          <img className={s.header_left_logo} src="https://intershipsystemy.pl/Img/logo.png" alt="logo" />
         </div>
         <div className={s.header_right}>
           <button className={s.header_right_button}>

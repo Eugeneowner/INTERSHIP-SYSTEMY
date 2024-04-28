@@ -24,7 +24,7 @@ function App() {
       <main>
       { isLoading && <Loader/>}
         <Routes>
-          <Route path="/" element={<MainPage/>}/>
+          <Route path="/*" element={<MainPage/>}/>
 
           <Route path="/order" element={<OrderPage/>}/>
           <Route path="/order-finish" element={<FinishOrder/>}/>

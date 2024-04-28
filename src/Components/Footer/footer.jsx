@@ -1,9 +1,7 @@
 import {FacebookFooter, MailFooter, PhoneFooter, TelegramFooter, WhatsappFooter } 
 from "../Assets/Icons";
-import footerImg from "../../Img/footerPmg.png"
 import s from "./footer.module.scss";
 
-import mailIcon from "../../Img/icons/mail.svg"
 import phoneIcon from "../../Img/icons/phone-call.svg"
 import telegram from "../../Img/icons/telegram.svg"
 import whatsApp from "../../Img/icons/whatsapp.svg"
@@ -21,7 +19,7 @@ const Footer = () => {
             <li className={s.footer_container_left_list_item}>
               <a className={s.footer_container_left_list_item_link} href="mail:office@intershipsystemy.pl">
                 <div className={s.footer_container_left_list_item_link_box}>
-                <img width="20" height="20" src={mailIcon} alt="" />
+                <img width="20" height="20" src="https://intershipsystemy.pl/Img/icons/mail.svg" alt="" />
                 </div>
                 
                 <a href="mailto:office@intershipsystemy.pl" className={s.footer_container_left_list_item_link_text}>
@@ -32,7 +30,7 @@ const Footer = () => {
             <li className={s.footer_container_left_list_item}>
               <a className={s.footer_container_left_list_item_link} href="tel:+30670000000">
                 <div className={s.footer_container_left_list_item_link_box}>
-                <img width="20" height="20" src={phoneIcon} alt="" />
+                <img width="20" height="20" src="https://intershipsystemy.pl/Img/icons/phone-call.svg" alt="" />
                 </div>
                 <p className={s.footer_container_left_list_item_link_text}>+30670000000</p>
               </a>
@@ -41,7 +39,7 @@ const Footer = () => {
               <a className={s.footer_container_left_list_item_link}
                 href="">
                 <div className={s.footer_container_left_list_item_link_box}>
-                <img width="20" height="20" src={telegram} alt="" />
+                <img width="20" height="20" src="https://intershipsystemy.pl/Img/icons/telegram.svg" alt="" />
                 </div>
                 <p className={s.footer_container_left_list_item_link_text}>Telegram</p>
               </a>
@@ -50,7 +48,7 @@ const Footer = () => {
               <a className={s.footer_container_left_list_item_link}
                 href="">
                <div className={s.footer_container_left_list_item_link_box}>
-                <img width="20" height="20" src={whatsApp} alt="" />
+                <img width="20" height="20" src="https://intershipsystemy.pl/Img/icons/whatsapp.svg" alt="" />
                 </div>
                 <p className={s.footer_container_left_list_item_link_text}>WhatsApp</p>
               </a>
@@ -58,7 +56,7 @@ const Footer = () => {
             <li className={s.footer_container_left_list_item}>
               <a className={s.footer_container_left_list_item_link}>
                <div className={s.footer_container_left_list_item_link_box}>
-                <img width="20" height="20" src={faceBook} alt="" />
+                <img width="20" height="20" src="https://intershipsystemy.pl/Img/icons/facebook.svg" alt="" />
                 </div>
                 <p className={s.footer_container_left_list_item_link_text}>Facebook</p>
               </a>
@@ -67,7 +65,7 @@ const Footer = () => {
           <h3 className={s.footer_container_left_text}>{t("footer.copyright")}</h3>
         </div>
         <div className={s.footer_container_right}>
-          <img className={s.footer_container_right_img} src={footerImg} />
+          <img className={s.footer_container_right_img} src="https://intershipsystemy.pl/Img/footerPmg.png" />
         </div>
 
       </div>
