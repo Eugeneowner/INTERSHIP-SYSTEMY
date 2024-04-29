@@ -270,7 +270,8 @@ export const UndoIcon = () => {
   );
 };
 
-export const CloseIcon = () => {
+export const CloseIcon = ({theme}) => {
+  console.log(theme === "yellow" ? "#ffea32" : "#fff")
   return (
     <svg
       width="800px"
@@ -278,7 +279,7 @@ export const CloseIcon = () => {
       viewBox="-0.5 0 25 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#ffffff"
+      stroke={theme === "yellow" ? "#ffea32" : "#fff"}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
@@ -292,14 +293,14 @@ export const CloseIcon = () => {
         {" "}
         <path
           d="M3 21.32L21 3.32001"
-          stroke="#ffffff"
+          stroke={theme === "yellow" ? "#ffea32" : "#fff"}
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />{" "}
         <path
           d="M3 3.32001L21 21.32"
-          stroke="#ffffff"
+          stroke={theme === "yellow" ? "#ffea32" : "#fff"}
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -308,3 +309,20 @@ export const CloseIcon = () => {
     </svg>
   );
 };
+
+export const MenuIcon = () => (
+  <svg
+    width="800px"
+    height="800px"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M2 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm1 4a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3z"
+      
+    />
+  </svg>
+);

@@ -5,6 +5,8 @@ import {
   PhoneIcon,
   FacebookIcon,
   UndoIcon,
+  MenuIcon,
+  CloseIcon,
 } from "../Assets/Icons";
 import mailIcon from "../../Img/icons/mailWhite.svg";
 import facebookIcon from "../../Img/icons/facebookWhite.svg";
@@ -13,20 +15,33 @@ import { Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLanguages } from "../../redux/slices/languages";
 import { t } from "i18next";
+import { changeMenuStatus } from "../../redux/slices/menu_m";
+import Nav_m from "../Nav_m/nav_m";
 
 const Header = () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
 
+  const navIsOpen = useSelector((state) => state.menu_m.isOpen);
+
   const handleChangeLanguage = (language) => {
     dispatch(changeLanguages(language));
   };
+
+  const handleChangeNav = () => {
+    dispatch(changeMenuStatus());
+  };
+
   const navList = useSelector((state) => state.nav.list);
   return (
     <header className={s.header}>
       <div className={s.header_wrapper}>
         <div className={s.header_left}>
-          <img className={s.header_left_logo} src="https://intershipsystemy.pl/Img/logo.png" alt="logo" />
+          <img
+            className={s.header_left_logo}
+            src="https://intershipsystemy.pl/Img/logo.png"
+            alt="logo"
+          />
         </div>
         <div className={s.header_right}>
           <button className={s.header_right_button}>
@@ -50,6 +65,14 @@ const Header = () => {
         </div>
       </div>
       <div className={s.header_bottom}>
+        <button
+          onClick={handleChangeNav}
+          className={`${s.header_bottom_btn} ${
+            navIsOpen && s.header_bottom_btn_close
+          }`}
+        >
+          {!navIsOpen ? <MenuIcon /> : <CloseIcon theme="yellow" />}
+        </button>
         <nav className={s.header_bottom_nav}>
           {pathname === "/" ? (
             navList.map((item) => (
@@ -109,6 +132,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      {navIsOpen && <Nav_m />}
     </header>
   );
 };

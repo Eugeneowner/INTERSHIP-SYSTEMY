@@ -1,0 +1,35 @@
+.nav{
+    padding: 12px 50px; 
+    width: calc(100% - 100px);
+    &_list{ 
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        &_item{
+            &_link{ 
+                transition-duration: 0.3s;
+                font-family: "Urbanist", sans-serif;
+                text-decoration: none;
+                color: #fff;
+                &:hover{ 
+                    transition-duration: 0.5s;
+                    color: #ffea32;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .nav{ 
+        display: none;
+    }
+}
+@media screen and (max-width: 475px) {
+    .nav{ 
+      
+        padding: 12px;
+        width: calc(100% - 24px);
+    }
+}

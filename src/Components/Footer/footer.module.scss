@@ -82,7 +82,10 @@
     }
     &_container{
       &_left{
+        padding-left: 0;
         &_list{
+          width: 95%;
+          margin: 0 auto;
           &_item{
             &_link{
               column-gap: 8px;
@@ -92,7 +95,8 @@
         &_text {    
           padding-top: 30px;
           border: none;
-          width: 375px;
+          width: 95%;
+          margin: 0 auto;
         }
       }
       &_right{
