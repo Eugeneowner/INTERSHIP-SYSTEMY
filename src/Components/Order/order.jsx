@@ -39,7 +39,11 @@ const Order = () => {
           <CloseIcon />
         </button>
         <div className={s.order_title}>
-          <BoxIcon />
+          <img
+            className={s.order_box}
+            src="https://intershipsystemy.pl/Img/box-close.png"
+            alt="box close"
+          />
           <h1 className={s.order_title_text}>{t(`order.${[currentTitle]}`)}</h1>
         </div>
         <form className={s.order_form}>

@@ -17,6 +17,9 @@ $yellow: #ffea32;
   backdrop-filter: blur(20.100000381469727px);
   background: rgba(37, 37, 37, 0.52);
   border-radius: 22px;
+  &_box{ 
+    width: 100px;
+  }
   &_btnClose{ 
     position: absolute;
     top: 25px;
