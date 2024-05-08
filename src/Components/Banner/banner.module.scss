@@ -31,6 +31,7 @@
     // font-family: "Poppins", sans-serif;
     font-weight: 600;
     line-height: 30px;
+    -webkit-text-stroke: 0.2px #ffea32;
     &_mission {
       padding-top: 10px;
       position: relative;
@@ -121,4 +122,9 @@
       }
     }
   }
+}
+
+
+.link{ 
+  text-decoration: none;
 }

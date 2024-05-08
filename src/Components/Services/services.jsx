@@ -7,7 +7,7 @@ import ServiceItem from "./seviceItem"
 const Services = () => {
   const servicesList = useSelector(state => state.services.list)
   return(
-    <section className={s.services}>
+    <section className={s.services} id="sevices">
       <h2 className={s.services_title}>{t("service.title")}</h2>
       <h3 className={s.services_description}>{t("service.description")}</h3>
       <ul className={s.services_list}>

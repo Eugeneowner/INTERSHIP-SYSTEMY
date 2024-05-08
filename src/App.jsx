@@ -9,6 +9,7 @@ import FinishOrder from './pages/finish/finish'
 import { useSelector } from 'react-redux'
 import { changeLanguage } from 'i18next'
 import PrivateRules from './pages/privateRules/privateRules'
+import { AnchorProvider } from 'react-anchor-navigation'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -20,6 +21,7 @@ function App() {
     }
   }, [isLoading])
   return (
+    <AnchorProvider>
     <BrowserRouter>
       <main>
       { isLoading && <Loader/>}
@@ -34,6 +36,7 @@ function App() {
         </Routes>
       </main>
     </BrowserRouter>
+    </AnchorProvider>
   )
 }
 
