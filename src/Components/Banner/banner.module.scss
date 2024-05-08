@@ -1,92 +1,99 @@
-.banner{
+.banner {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 50px;
   width: 100%;
   height: 859px;
   background: url("https://intershipsystemy.pl/Img/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  &_name{
-    padding-top: 250px;
+  &_name {
+    padding-top: 200px;
     text-align: center;
     font-weight: 700;
     font-size: 40px;
     color: #ffea32;
-    -webkit-text-stroke: 1px #655c0f; 
+    -webkit-text-stroke: 1px #655c0f;
     font-family: "Montserrat", sans-serif;
-    
-
   }
-  &_description{
-    padding-top: 20px;
+  &_description {
+    padding-top: 60px;
+    padding-bottom: 50px;
     display: block;
     margin: 0 auto;
     width: 915px;
     font-size: 24px;
     font-weight: 500px;
-    color:#fff;
+    color: #fff;
     text-align: center;
     // font-family: "Roboto", sans-serif;
     font-family: "Raleway", sans-serif;
     // font-family: "Poppins", sans-serif;
     font-weight: 600;
     line-height: 30px;
-    &_mission{
+    &_mission {
       padding-top: 10px;
-    display: block;
-    line-height: 25px;
-    margin: 0 auto;
-    width: 915px;
-    font-size: 16px;
-    font-weight: 500px;
-    color:#fff;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    // font-family: "Poppins", sans-serif;
-    font-weight: 600;
+      position: relative;
+     
+      display: block;
+      line-height: 25px;
+      margin: 0 auto;
+      width: 915px;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      // font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      &::before{ 
+        top:0;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        height: 1px;
+        background: #ffea32;
+        content: "";
+      }
     }
   }
-  &_button{
+  &_button {
     display: block;
-    margin: 150px auto 0 auto;
+    margin: 0px auto 0 auto;
     width: 200px;
     height: 52px;
-    border-radius:12px;
-    border:none;
-    background:#ffea32;
+    border-radius: 12px;
+    border: none;
+    background: #ffea32;
     font-size: 20px;
     font-weight: 600;
     color: #333;
     font-family: "Raleway", sans-serif;
     // font-family: "IBM Plex Mono", monospace;
     // font-family: "Urbanist", sans-serif;
-    &:hover{
+    &:hover {
       text-decoration: 0.6s;
       // background:#F29C1F;
       backdrop-filter: blur(10.800000190734863px);
       background: rgba(0, 0, 0, 0.35);
-      color:#ffea32;
+      color: #ffea32;
     }
   }
 }
 @media screen and (max-width: 475px) {
-  .banner{
-    &_name{
+  .banner {
+    &_name {
       padding-top: 175px;
-
     }
-    &_description{
+    &_description {
       width: 90%;
       max-width: 450px;
-&_mission{
-      display: none;
-    } 
+      &_mission {
+        display: none;
+      }
     }
-    
   }
 }
-@media screen and (min-width: 476px) and (max-width:768px) {
+@media screen and (min-width: 476px) and (max-width: 768px) {
   .banner {
     &_name {
       padding-top: 175px;
@@ -94,15 +101,14 @@
     &_description {
       width: 90%;
       max-width: 650px;
-       &_mission {
-      width: 90%;
-      max-width: 700;
+      &_mission {
+        width: 90%;
+        max-width: 700;
+      }
     }
-    }
-   
   }
 }
-@media screen and (min-width:769px) and (max-width:1440px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .banner {
     &_description {
       width: 90%;

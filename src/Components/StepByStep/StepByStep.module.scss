@@ -1,10 +1,10 @@
-.section{
+.section {
   height: 825px;
   background: url("https://intershipsystemy.pl/Img/stepByStepSection.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.title{
+.title {
   padding-top: 100px;
   font-weight: 700;
   font-size: 24px;
@@ -13,15 +13,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.steps{
+.steps {
   position: relative;
   width: 90%;
   margin: 220px auto 0 auto;
-  &>svg{
-    position: absolute;
-    left: 17px;
+  &_decor {
+    & svg {
+      position: absolute;
+      left: 17px;
+    }
   }
-  &_list{
+  &_list {
     list-style: none;
     margin: 0 auto;
     width: 1187px;
@@ -31,15 +33,17 @@
 }
 
 @media screen and (max-width: 475px) {
-  .section{
+  .section {
     height: auto;
   }
-  .steps{
+  .steps {
     margin-top: 110px;
-    &>svg{
-      display: none;
+    &_decor {
+      & svg {
+        display: none;
+      }
     }
-    &_list{
+    &_list {
       width: 100%;
       flex-wrap: wrap;
       gap: 15px;
@@ -47,16 +51,18 @@
     }
   }
 }
-@media screen and (min-width:476px) and (max-width: 768px){
+@media screen and (min-width: 476px) and (max-width: 768px) {
   .section {
     height: auto;
   }
-  .steps{
+  .steps {
     margin-top: 110px;
-    &>svg{
-      display: none;
+    &_decor {
+      & svg {
+        display: none;
+      }
     }
-    &_list{
+    &_list {
       max-width: 476px;
       width: 100%;
       flex-wrap: wrap;
@@ -65,29 +71,29 @@
     }
   }
 }
-@media screen and (min-width:769px) and (max-width:1439px) {
-  .section{
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .section {
     height: auto;
     padding-bottom: 50px;
   }
   .steps {
     margin-top: 140px;
-    svg{
-      display: none;
-
+    &_decor {
+      & svg {
+        display: none;
+      }
     }
-    &_list{
-        width: 70%;
-        max-width: 650px;
-        flex-wrap: wrap;
-        justify-content: center;
-
+    &_list {
+      width: 70%;
+      max-width: 650px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }
 
-@media screen and (min-width:1440px) {
-    .steps{ 
-      max-width: 1300px;
-    }
+@media screen and (min-width: 1440px) {
+  .steps {
+    max-width: 1300px;
+  }
 }

@@ -11,7 +11,7 @@ const StepByStep = () => {
   <section className={s.section}>
     <h2 className={s.title}>{t("stepByStep.title")}</h2>
     <div className={s.steps}>
-    <StepsBgIcon/>
+    <span className={s.steps_decor}><StepsBgIcon/></span>
       <ul className={s.steps_list}>
         {
           stepsList.map(step => <StepItem key={step.id} id={step.id} name={step.name}/>)
