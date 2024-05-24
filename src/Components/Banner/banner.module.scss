@@ -1,7 +1,8 @@
 .banner {
+  position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  //row-gap: 50px;
   width: 100%;
   height: 859px;
   background: url("https://intershipsystemy.pl/Img/banner.png");
@@ -17,7 +18,7 @@
     font-family: "Montserrat", sans-serif;
   }
   &_description {
-    padding-top: 60px;
+    padding-top: 120px;
     padding-bottom: 50px;
     display: block;
     margin: 0 auto;
@@ -33,9 +34,11 @@
     line-height: 30px;
     -webkit-text-stroke: 0.2px #ffea32;
     &_mission {
-      padding-top: 10px;
-      position: relative;
-     
+      width: 100%;
+      position: absolute;
+      bottom:  60px;
+      left: 50%;
+      transform: translateX(-50%);
       display: block;
       line-height: 25px;
       margin: 0 auto;
@@ -46,18 +49,14 @@
       font-family: "Raleway", sans-serif;
       // font-family: "Poppins", sans-serif;
       font-weight: 600;
-      &::before{ 
-        top:0;
-        left: 5%;
-        position: absolute;
-        width: 90%;
-        height: 1px;
-        background: #ffea32;
-        content: "";
-      }
+      
     }
   }
   &_button {
+    position: absolute;
+    left: 50%;
+    bottom: 200px;
+    transform: translateX(-50%);
     display: block;
     margin: 0px auto 0 auto;
     width: 200px;
