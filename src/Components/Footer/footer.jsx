@@ -64,6 +64,7 @@ const Footer = () => {
             </li>
           </ul>
           <h3 className={s.footer_container_left_text}>{t("footer.copyright")}</h3>
+          <h3 className={s.footer_container_left_text}>{t("footer.copyright_part2")}</h3>
         </div>
         <div className={s.footer_container_right}>
           <img className={s.footer_container_right_img} src="https://intershipsystemy.pl/Img/footerPmg.png" />
