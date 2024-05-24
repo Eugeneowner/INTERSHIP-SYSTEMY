@@ -34,7 +34,6 @@
     line-height: 30px;
     -webkit-text-stroke: 0.2px #ffea32;
     &_mission {
-      width: 100%;
       position: absolute;
       bottom:  60px;
       left: 50%;
@@ -112,10 +111,12 @@
   .banner {
     &_description {
       width: 90%;
+     
       margin-right: auto;
       margin-left: auto;
       &_mission {
         width: 90%;
+        max-width: 915px;
         margin-right: auto;
         margin-left: auto;
       }
